@@ -15,12 +15,12 @@ export default function Contact() {
           404 – Unavailable
         </h1>
         <br />
-        <a
+        <Link
           className="w-64 p-1 mx-auto font-bold text-center text-black border border-gray-500 rounded-lg sm:p-4"
-          // href="/"
+          href="/"
         >
           Return Home
-        </a>
+        </Link>
       </div>
       <div className="mt-64"></div>
       <Footer />

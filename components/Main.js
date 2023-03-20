@@ -13,12 +13,12 @@ export default function Main() {
             Next.js and styled with Tailwind CSS
           </p>
           <div className="flex justify-center">
-            <a
+            <Link
               className="inline-flex items-center px-5 py-3 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-blue-primary border rounded-lg bg-gray-900"
               href="https://github.com/AyushIyankan/HospitalApp/releases/tag/v1.1"
             >
               <span className="justify-center">Find out more</span>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="xl:mr-44 sm:mr-0 sm:mb-28 mb-0 lg:mb-0 mr-48 md:pl-10">
