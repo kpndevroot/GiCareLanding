@@ -1,24 +1,36 @@
 import Image from "next/image";
 import Link from "next/link";
-import mock from "../public/images/iPhone-12-Pro.png";
+import mock from "../public/images/devicess.png";
+import { IoLogoGithub, IoLogoGooglePlaystore } from "react-icons/io5";
 export default function Main() {
   return (
     <section className="text-gray-600 body-font">
       <div className="max-w-7xl mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 md:ml-24 pt-6 flex flex-col md:items-start md:text-left mb-40 items-center text-center">
           <h1 className="mb-5 sm:text-6xl text-5xl items-center Avenir xl:w-2/2 text-gray-900">
-            We are making Stunning Websites
+            Expert care, just a Click away: Your health, our priority
           </h1>
           <p className="mb-4 xl:w-3/4 text-gray-600 text-lg">
-            nine4 is a free to use website template for websites made with
-            Next.js and styled with Tailwind CSS
+            "Stomach troubles? We've got you covered: Gastrology with
+            compassion."
           </p>
           <div className="flex justify-center">
             <Link
-              className="inline-flex items-center px-5 py-3 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-blue-primary border rounded-lg bg-gray-900"
+              className="inline-flex items-center px-5 py-3 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-blue-primary border rounded-lg"
               href="https://github.com/AyushIyankan/HospitalApp/releases/tag/v1.1"
             >
               <span className="justify-center">Find out more</span>
+            </Link>
+          </div>
+          <div className="flex flex-row w-full gap-3 mb-4 my-4 text-left lg:text-center">
+            <Link href="/">
+              <IoLogoGooglePlaystore size={40} />
+            </Link>
+            <Link
+              href="https://github.com/AyushIyankan/HospitalApp/releases"
+              target="_blank"
+            >
+              <IoLogoGithub size={40} />
             </Link>
           </div>
         </div>
@@ -31,6 +43,7 @@ export default function Main() {
           ></Image>
         </div>
       </div>
+
       {/* <section className="mx-auto">
         <div className="container px-5 mx-auto lg:px-24 ">
           <div className="flex flex-col w-full mb-4 text-left lg:text-center">

@@ -147,7 +147,7 @@ export default function Footer() {
           </li>
         </ul> */}
         <div className="flex flex-col-reverse justify-between pt-5 pb-4 border-t lg:flex-row bg-top border-black">
-          <ul className="flex flex-col space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+          {/* <ul className="flex flex-col space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
             <li>
               <Link
                 href="/"
@@ -188,7 +188,7 @@ export default function Footer() {
                 Partners
               </Link>
             </li>
-          </ul>
+          </ul> */}
           <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
             <Link
               href="/"

@@ -48,32 +48,32 @@ export default function Header() {
         >
           <nav className="flex-col flex-grow ">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
-              <li>
+              {/* <li>
                 <Link
                   href="/"
                   className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   Careers
                 </Link>
-              </li>
+              </li> */}
               <li>
-                <Link
+                {/* <Link
                   href="/"
                   className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   About Us
-                </Link>
+                </Link> */}
               </li>
               <li>
                 <Link
-                  className="inline-flex items-center px-4 py-2 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-blue-primary rounded-lg text-md md:mt-0 md:ml-4 bg-gray-900"
+                  className="inline-flex items-center px-4 py-2 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-blue-primary rounded-lg text-md md:mt-0 md:ml-4 "
                   href="https://github.com/AyushIyankan/HospitalApp/releases/download/v1.1/app-arm64-v8a-release.apk"
                   download
                 >
                   <span className="justify-center text-black-400">
                     Download
                   </span>
-                  <svg
+                  {/* <svg
                     className="w-3 h-3 fill-current text-gray-400 flex ml-2 -mr-1"
                     viewBox="0 0 12 12"
                     xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ export default function Header() {
                       d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z"
                       fillRule="nonzero"
                     />
-                  </svg>
+                  </svg> */}
                 </Link>
               </li>
             </ul>
