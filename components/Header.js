@@ -8,7 +8,7 @@ export default function Header() {
       <div className="flex flex-col max-w-6xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div className="flex flex-row items-center justify-between p-4">
           <a
-            href="/"
+            // href="/"
             className="text-lg font-semibold rounded-lg tracking-widest focus:outline-none focus:shadow-outline"
           >
             <h1 className="text-4xl Avenir tracking-tighter text-blue-primary md:text-4x1 lg:text-3xl">
@@ -49,7 +49,7 @@ export default function Header() {
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
                 <a
-                  href="/"
+                  // href="/"
                   className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   Careers
@@ -57,7 +57,7 @@ export default function Header() {
               </li>
               <li>
                 <a
-                  href="/"
+                  // href="/"
                   className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
                 >
                   About Us

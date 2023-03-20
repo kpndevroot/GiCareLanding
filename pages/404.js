@@ -17,7 +17,7 @@ export default function Contact() {
         <br />
         <a
           className="w-64 p-1 mx-auto font-bold text-center text-black border border-gray-500 rounded-lg sm:p-4"
-          href="/"
+          // href="/"
         >
           Return Home
         </a>
