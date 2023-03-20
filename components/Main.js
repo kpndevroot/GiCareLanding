@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import mock from "../public/images/iPhone-12-Pro.png";
 export default function Main() {
   return (
