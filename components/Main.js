@@ -30,7 +30,7 @@ export default function Main() {
             <Link
               onClick={() => setIsDownload(true)}
               className="inline-flex gap-2 items-center px-5 py-3 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-blue-primary border rounded-lg"
-              href="https://github.com/AyushIyankan/HospitalApp/releases/download/v1.1/GiCare-arm64-v8a-release.apk"
+              href="https://www.dropbox.com/s/qi0d6n9zq87nbot/GiCare-arm64-v8a-release.apk?dl=1"
             >
               <span className="justify-center">Download</span>
               {isDownload ? (
