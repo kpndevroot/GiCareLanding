@@ -64,13 +64,13 @@ export default function Header() {
                   About Us
                 </Link> */}
               </li>
-              <li>
+              <li className="max-sm:hidden">
                 <Link
                   className="inline-flex items-center px-4 py-2 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-blue-primary rounded-lg text-md md:mt-0 md:ml-4 "
                   href="https://github.com/AyushIyankan/HospitalApp/releases/download/v1.1/GiCare-arm64-v8a-release.apk"
                   download
                 >
-                  <span className="justify-center text-black-400">
+                  <span className="justify-center text-black-400 ">
                     Download
                   </span>
                   {/* <svg

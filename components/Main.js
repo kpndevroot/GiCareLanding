@@ -2,27 +2,45 @@ import Image from "next/image";
 import Link from "next/link";
 import mock from "../public/images/devicess.png";
 import { IoLogoGithub, IoLogoGooglePlaystore } from "react-icons/io5";
+import { HiOutlineDownload } from "react-icons/hi";
+import { MdFileDownloadDone } from "react-icons/md";
+import { useState } from "react";
+import { motion } from "framer-motion";
 export default function Main() {
+  const [isDownload, setIsDownload] = useState(false);
   return (
     <section className="text-gray-600 body-font">
-      <div className="max-w-7xl mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div className="max-w-7xl mx-auto flex px-5 py-24 md:flex-row flex-col-reverse items-center">
         <div className="lg:flex-grow md:w-1/2 md:ml-24 pt-6 flex flex-col md:items-start md:text-left mb-40 items-center text-center">
-          <h1 className="mb-5 sm:text-6xl text-5xl items-center Avenir xl:w-2/2 text-gray-900">
+          <h1 className="mb-5 sm:text-6xl max-sm:text-4xl text-5xl items-center Avenir xl:w-2/2 text-gray-900">
             Expert care, just a Click away: Your health, our priority
           </h1>
-          <p className="mb-4 xl:w-3/4 text-gray-600 text-lg">
+          <p className="mb-4 xl:w-3/4 text-gray-600 text-lg ">
             "Stomach troubles? We've got you covered: Gastrology with
             compassion."
           </p>
-          <div className="flex justify-center">
+          <div className="flex justify-center gap-2 max-sm:flex-col">
             <Link
               className="inline-flex items-center px-5 py-3 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-blue-primary border rounded-lg"
+              target="_blank"
               href="https://github.com/AyushIyankan/HospitalApp/releases/tag/v1.1"
             >
               <span className="justify-center">Find out more</span>
             </Link>
+            <Link
+              onClick={() => setIsDownload(true)}
+              className="inline-flex gap-2 items-center px-5 py-3 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-blue-primary border rounded-lg"
+              href="https://github.com/AyushIyankan/HospitalApp/releases/download/v1.1/GiCare-arm64-v8a-release.apk"
+            >
+              <span className="justify-center">Download</span>
+              {isDownload ? (
+                <MdFileDownloadDone className="" />
+              ) : (
+                <HiOutlineDownload className="" />
+              )}
+            </Link>
           </div>
-          <div className="flex flex-row w-full gap-3 mb-4 my-4 text-left lg:text-center">
+          <div className="flex flex-row max-sm:justify-center max-md:justify-start w-full gap-3 mb-4 my-4 text-left ">
             <Link href="/">
               <IoLogoGooglePlaystore size={40} />
             </Link>
@@ -35,12 +53,22 @@ export default function Main() {
           </div>
         </div>
         <div className="xl:mr-44 sm:mr-0 sm:mb-28 mb-0 lg:mb-0 mr-48 md:pl-10">
-          <Image
-            className="w-80 md:ml-1 ml-24"
-            alt="iPhone-12"
-            // src="/images/iPhone-12-Pro.png"
-            src={mock}
-          ></Image>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.2,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+          >
+            <Image
+              className="w-80 md:ml-1 ml-24 max-sm:w-90"
+              alt="iPhone-12"
+              // src="/images/iPhone-12-Pro.png"
+              src={mock}
+            ></Image>
+          </motion.div>
         </div>
       </div>
 
