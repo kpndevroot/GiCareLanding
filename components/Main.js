@@ -30,7 +30,7 @@ export default function Main() {
             <Link
               onClick={() => setIsDownload(true)}
               className="inline-flex gap-2 items-center px-5 py-3 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-blue-primary border rounded-lg"
-              href="https://www.dropbox.com/s/nmgt6wbtfqj18co/app-release.apk?dl=1"
+              href="https://www.dropbox.com/s/nmgt6wbtfqj18co/GiCare.apk?dl=1"
             >
               <span className="justify-center">Download</span>
               {isDownload ? (
