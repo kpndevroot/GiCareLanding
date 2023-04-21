@@ -23,14 +23,14 @@ export default function Main() {
             <Link
               className="inline-flex items-center px-5 py-3 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-blue-primary border rounded-lg"
               target="_blank"
-              href="https://github.com/AyushIyankan/HospitalApp/releases/tag/v1.1"
+              href="https://github.com/AyushIyankan/HospitalApp/releases/tag/v1.3"
             >
               <span className="justify-center">Find out more</span>
             </Link>
             <Link
               onClick={() => setIsDownload(true)}
               className="inline-flex gap-2 items-center px-5 py-3 mt-2 font-medium text-white transition duration-500 ease-in-out transform bg-blue-primary border rounded-lg"
-              href="https://www.dropbox.com/s/qi0d6n9zq87nbot/GiCare-arm64-v8a-release.apk?dl=1"
+              href="https://www.dropbox.com/s/b9dvg2vs7c37cpf/GiCare.apk?dl=1"
             >
               <span className="justify-center">Download</span>
               {isDownload ? (
